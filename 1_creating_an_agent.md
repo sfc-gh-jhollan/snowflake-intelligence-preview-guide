@@ -43,7 +43,7 @@ Be aware of the *Access* tab in the agent configuration where you can define whi
 You can use the playground in the admin experience to test an agent configuration after saving changes. Additionally, once saved and in the `snowflake_intelligence.agents` schema, you can view and interact with the agent through Snowflake Intelligence (either accessing Snowflake Intelligence through Snowsight under AI+ML or via https://ai.snowflake.com).
 
 ### The importance of default_roles and default_warehouse
-When users navigate to Snowflake Intelligence, by default we use the users `DEFAULT_ROLE` for their permissions. So be sure any users navigating to Snowflake Intelligence have a `DEFAULT_ROLE` set that has access to the following:
+When users navigate to Snowflake Intelligence, by default we use the users `DEFAULT_ROLE` for their permissions, and the `DEFAULT_WAREHOUSE` to execute any queries if one is not specified by the tool. So be sure any users navigating to Snowflake Intelligence have a `DEFAULT_ROLE` set that has access to the following:
 - `USAGE` on the `snowflake_intelligence` database
 - `USAGE` on the `snowflake_intelligence.agents` schema
 - `SELECT` on any semantic views used by the agent
