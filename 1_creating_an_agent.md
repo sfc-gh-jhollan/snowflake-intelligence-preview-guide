@@ -49,5 +49,6 @@ When users navigate to Snowflake Intelligence, by default we use the users `DEFA
 - `SELECT` on any semantic views used by the agent
 - `SELECT` on any tables defined in the semantic views
 - `USAGE` on any cortex search services used by the agent
+- `read` on any stage that is storing a semantic model yaml
 
 In the admin experience you can see the *Verify Access* button which should check the above for any role you have given access to an agent.
