@@ -16,6 +16,24 @@ GRANT USAGE ON SCHEMA snowflake_intelligence.agents TO ROLE PUBLIC;
 -- GRANT CREATE ON SCHEMA snowflake_intelligence.agents TO ROLE <your_role>;
 ```
 
+### Ensure you have access to the right models
+
+Snowflake Intelligence uses frontier LLMs (Anthropic Claude 4, OpenAI GPT 4.1) running in Snowflake via Cortex to power the agentic experience. As such, you need to ensure you are in a region that supports these models, or you can enable [cross region inference](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference) to allow Snowflake to securely call models running in a nearby Snowflake region (no additional cost for this).
+
+#### Azure US Regions
+- East US 2, no cross region calling required
+- Any other region: `ALTER ACCOUNT SET CORTEX_ENABLED_CROSS_REGION = 'AZURE_US';`
+
+#### AWS US Regions
+- For Claude 3.5, no cross region calling is required
+- For Claude 4: `ALTER ACCOUNT SET CORTEX_ENABLED_CROSS_REGION = 'AWS_US';`
+
+#### AWS EU Regions
+- For Claude 4: `ALTER ACCOUNT SET CORTEX_ENABLED_CROSS_REGION = 'AWS_EU';`
+
+#### Any other region
+Use cross region for either AZURE_US, AWS_US, AWS_EU, or ANY_REGION.
+
 ## Check to make sure you're on the latest version of Snowflake Intelligence
 
 In Snowsight, under AI+ML select the *Agents* tab.
