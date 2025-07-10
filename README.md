@@ -8,3 +8,7 @@ Thank you for participating in the Snowflake Intelligence Preview. We appreciate
 - [Feature Overview](3_feature_overview.md)
 - [Frequently Asked Questions (FAQ)](4_faq.md)
 - [Roadmap](5_roadmap.md)
+
+## Questions or issues?
+
+Work with your account team who can funnel back feedback or questions to the team. Beyond that, feel free to reach out at jeff.hollan@snowflake.com
