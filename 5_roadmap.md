@@ -2,20 +2,18 @@
 
 Here’s a glimpse at the current high-level backlog for Snowflake Intelligence. The list here may shift and evolve heavily based on your feedback, but may be useful to know what may be lighting up soon:
 
-**Call a custom action** \- Rolling out now \- can call a procedure in your Snowflake account to pull in data from somewhere else (e.g. get weather), take an action (e.g. create a Salesforce record / send an email), or whatever you write Python code to do
-
-**Web Search** \- \~July / August
+**Web Search** \- \~August / September (possible today via custom tools, but we're trying to provide out of the box. Just need to close on provider + legal terms).
 
 **Make it easier to create semantic models \-** PrPr now, more rolling out over coming weeks. E.g. “Import from Tableau dashboard”, “Learn from internal documentation about your data”, “Look at your query history”, “Auto-tune my model to be able to accurately answer these 20 eval questions”
 
-**Agent creation experience \- full** \- a larger experience in Snowsight to define knowledge sources, instructions, actions, and hae a playground to test agents. Would include UI to invite other users \- \~**July 10**
-
-**Save charts or outputs for frequent lookup / refresh** \- \~Aug
+**Save charts or outputs for frequent lookup / refresh** \- \~Sep/Oct
 
 General chart improvements (more chart types, look+feel) \- \~Aug
 
 Call an agent via MCP \- \~Aug  
-Add MCP server as a tool \- \~Sept
+Add an MCP server as a tool \- \~Sept
+
+Have the agent able to synthesize a conversation or finding into a Streamlit app \- \~Oct
 
 Ability to define a specific “workflow” for an agent to follow (e.g. to generate a health report for my customer, first do this, then do this, then do that) \- \~Sept
 
@@ -29,4 +27,3 @@ Slack integration (\~Q4)
 - Integrate forecasting and ML models into Agent responses (out of the box or custom models)  
 - Send periodic digests or reports on data that you care about (e.g. here’s something interesting that’s happened in data that you care about)  
 - Add Streamlit or custom UI apps to [ai.snowflake.com](http://ai.snowflake.com)  
-- The ability for an agent to turn a conversation into a more shareable / re-usable custom app / streamlit
